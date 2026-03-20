@@ -67,11 +67,76 @@ header {
     margin-top: auto;
 }
 
+
+.mas-amigos {
+    text-align: center;
+    margin: 0 20px 40px 20px;
+    padding: 30px;
+    background-color: #6989fc; 
+    border-radius: 15px;
+}
+
+.mas-amigos h2 {
+    color: #4a148c;
+    margin-bottom: 25px;
+}
+
+.contenedor-amigos {
+    display: flex;
+    flex-direction: row; 
+    
+    justify-content: space-around; 
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.amigo {
+    background-color: white;
+    border: 2px dashed #6d79ff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    
+    /* Flexbox interno para alinear imagen y texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.amigo:hover {
+    transform: scale(1.05);
+}
+
+.imag-amigo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4428e1;
+    margin-bottom: 15px;
+}
+
+.amigo h4 {
+    color: #456783;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.amigo p {
+    font-size: 14px;
+    color: #546e7a;
+}
+
+/* --- SECCIÓN HOVER --- */
 .hover-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0;
+    margin: 20px 0 40px 0;
     gap: 15px;
 }
 
